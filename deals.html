@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Recommended Deals</title>
+      <style>
+         body {
+         font-family: 'Times New Roman', Times, serif;
+         margin: 0;
+         padding: 0;
+         }
+         header {
+         background-color: rgb(209, 6, 6);
+         color: white;
+         padding: 5px;
+         text-align: center;
+         text-transform: uppercase;
+         }
+         .travelDealGrid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(2, minmax(0, 1fr)); 
+         max-width: 1400px;
+         margin: 0 auto;
+         padding: 40px; 
+         gap: 40px;
+         }
+         .travelDealItems {
+         text-align: center;
+         max-width: 420px;
+         height: 550px; 
+         margin: 0 auto; 
+         text-decoration: none;
+         color: inherit; 
+         border: 5px solid rgb(209, 6, 6); 
+         border-radius: 5px;
+         }
+         .travelDealItems {
+         transition: transform 0.3s ease-in-out;
+         }
+         .travelDealItems:hover {
+         transform: scale(1.1);
+         }
+         h2 {
+         background-color: rgb(209, 6, 6);
+         color: white;
+         padding: 10px;
+         margin: 0;
+         text-transform: uppercase;
+         font-size: 20px;
+         }
+         img {
+         width: 100%;
+         object-fit: cover;
+         }
+         .Facts {
+         text-align: left;
+         padding-left: 5px;
+         margin-top: 0;
+         padding-top: 0;
+         }
+         .travelDealItems ul li {
+         list-style: none;
+         text-align: left;
+         margin: 0;
+         padding: 3px 0;
+         }
+         .travelDealItems h4 {
+         color: rgb(209, 6, 6);
+         text-align: left;
+         margin: 5px 0; 
+         padding-left: 5px;
+         }
+         .travelDealGrid article:nth-child(n+4) {
+         margin-top: 30px;
+         }
+         @media only screen and (max-width: 768px) {
+         .travelDealGrid {
+         grid-template-columns: 1fr;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Recommended Deals</h1>
+      </header>
+      <section class="travelDealGrid">
+         <article class="travelDealItems">
+            <h2>Deal 1: Grand Japan</h2>
+            <a href="japan.html">
+            <img src="japan.jpg" alt="img">
+            </a>
+            <ul class="Facts">
+               <li>Embark the natural wonders of Japan.</li>
+               <li>Witness breathtaking vistas from Mt. Fuji.</li>
+            </ul>
+            <h4>Includes Return International Full-Service Flights.</h4>
+         </article>
+         <!-- Deal 2 -->
+         <article class="travelDealItems">
+            <h2>Deal 2: Luxury Antartica</h2>
+            <a href="antartica.html">
+            <img src="antartica.jpg" alt="img">
+            </a>
+            <ul class="Facts">
+               <li>Cruise into the pristine white continent in luxury ship. </li>
+               <li>Explore Buenos Aires, Ushuaia, Drake Passage.</li>
+            </ul>
+            <h4>Includes Return International Full-Service Flights.</h4>
+         </article>
+         <!-- Deal 3 -->
+         <article class="travelDealItems">
+            <h2>Deal 3: Glamarous Bangkok</h2>
+            <a href="bangkok.html">
+            <img src="bangkok.jpg" alt="img">
+            </a>
+            <ul class="Facts">
+               <li>Experience dazzling Bangkok & exotic Phuket.</li>
+               <li>Phi phi Islands tour plus enjoy daily breakfast.</li>
+            </ul>
+            <h4>Includes Return International Full-Service Flights.</h4>
+         </article>
+         <!-- Deal 4 -->
+         <article class="travelDealItems">
+            <h2>Deal 4: Luxury Sri Lanka</h2>
+            <a href="srilanka.html">
+            <img src="srilanka.jpg" alt="img">
+            </a>
+            <ul class="Facts">
+               <li>Experience the best of Sri Lanka on a small group tour.</li>
+               <li>Stay at the 5-star Heritance Kandalama Hotel.</li>
+            </ul>
+            <h4>Includes Return International Full-Service Flights.</h4>
+         </article>
+         <!-- Deal 5 -->
+         <article class="travelDealItems">
+            <h2>Deal 5: Warrior of china</h2>
+            <a href="china.html">    
+            <img src="china.jpg" alt="img">
+            </a>
+            <ul class="Facts">
+               <li>Uncover the cultural marvels and rich history of China. </li>
+               <li>Great Wall and marvel at the Terracotta Warriors.</li>
+            </ul>
+            <h4>Includes Return International Full-Service Flights.</h4>
+         </article>
+         <!-- Deal 6 -->
+         <article class="travelDealItems">
+            <h2>Deal 6: South Africa 2 for 1 </h2>
+            <a href="africa.html">
+            <img src="africa.jpg" alt="img">
+            </a>
+            <ul class="Facts">
+               <li>Immerse yourself in a unique South African Safari.</li>
+               <li> Encounter the Big 5, in a 4-star luxury tented lodge.</li>
+            </ul>
+            <h4>Includes Return International Full-Service Flights.</h4>
+         </article>
+      </section>
+      <script></script>
+   </body>
+</html>
